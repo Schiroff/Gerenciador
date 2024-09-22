@@ -1,0 +1,147 @@
+/* src/styles/Dashboard.css */
+
+.dashboard {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f4f7f6;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.summary-card h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.summary-card p {
+  font-size: 1.5em;
+  margin: 10px 0 0;
+  color: #007bff;
+}
+
+.summary-card.income {
+  border-left: 5px solid #28a745;
+}
+
+.summary-card.expense {
+  border-left: 5px solid #dc3545;
+}
+
+.summary-card.balance {
+  border-left: 5px solid #007bff;
+}
+
+.add-transaction {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.add-transaction h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.add-button:hover {
+  background-color: #0056b3;
+}
+
+.transactions {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.transactions h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td.income {
+  color: #28a745;
+}
+
+td.expense {
+  color: #dc3545;
+}
+
+button.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.remove-button:hover {
+  background-color: #c82333;
+}
+
+
+.financial-chart {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 300px; /* Ajuste a largura do gráfico */
+  height: 300px; /* Ajuste a altura do gráfico */
+  margin: 0 auto; /* Centraliza o gráfico */
+}
